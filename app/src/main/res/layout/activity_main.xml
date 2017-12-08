@@ -7,54 +7,26 @@
     android:orientation="vertical"
     android:background="@drawable/backgroup"
  >
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="0.5"
+     >
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/head_portrait"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:src="@drawable/head_portrait" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/head_portrait"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/head_portrait" />
-    <Button
-        android:layout_width="20dip"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        />
-<RelativeLayout
-    android:layout_width="wrap_content"
+
+ </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
     >
-
-    <EditText
-        android:layout_width="250dip"
-        android:layout_height="40dip"
-        android:id="@+id/account"
-        android:hint="Username"
-        android:layout_gravity="center"
-        android:paddingLeft="40dip"
-        android:singleLine="true"
-        android:background="@drawable/shape_corner"
-        />
-    <ImageView
-        android:layout_width="40dip"
-        android:layout_height="40dip"
-        android:src="@drawable/me"
-        android:id="@+id/account_image"
-        />
-</RelativeLayout>
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="20dip"
-        android:background="@android:color/transparent"
-        />
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,8 +36,31 @@
         <EditText
             android:layout_width="250dip"
             android:layout_height="40dip"
+            android:id="@+id/account"
+            android:hint="Username"
+            android:layout_gravity="center"
+            android:paddingLeft="40dip"
+            android:singleLine="true"
+            android:background="@drawable/shape_corner"
+            />
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/me"
+            android:id="@+id/account_image"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        >
+        <EditText
+            android:layout_width="250dip"
+            android:layout_height="40dip"
             android:id="@+id/password"
-            android:hint="PassWord"
+            android:hint="Password"
             android:paddingLeft="40dip"
             android:singleLine="true"
             android:background="@drawable/shape_corner"
@@ -78,31 +73,29 @@
             />
     </RelativeLayout>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="20dip"
-        android:background="@android:color/transparent"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:id="@+id/Login"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_carner_button"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:text="Login"
         />
-<Button
-    android:layout_width="250dip"
-    android:layout_height="wrap_content"
-    android:id="@+id/Login"
-    android:background="@drawable/shape_carner_button"
-    android:layout_gravity="center"
-    android:textColor="#ffff"
-    android:text="Login"
-    />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="20dip"
-        android:background="@android:color/transparent"
-        />
-    <Button
+        android:layout_marginTop="20dip"
         android:layout_width="250dip"
         android:layout_height="wrap_content"
         android:id="@+id/register"
         android:text="Register"
+        android:textAllCaps="false"
         android:textColor="#ffff"
         android:background="@drawable/shape_carner_button"
         android:layout_gravity="center"
         />
+</LinearLayout>
+
+
 </LinearLayout>

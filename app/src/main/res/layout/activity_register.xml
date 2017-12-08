@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffe"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.joe.smartstop.RegisterActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head_portrait"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/newheadportait" />
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:orientation="vertical"
+    >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameWrapper"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_account"
+            android:hint="Username"
+            android:textColor="#000"
+            />
+    </android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:id="@+id/add_passwordWrapper"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_password"
+        android:hint="PassWord"
+        android:textColor="#000"
+
+        />
+
+</android.support.design.widget.TextInputLayout>
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="4dp"
+         android:text="Register"
+         android:textAllCaps="false"
+         android:id="@+id/add_register"
+         />
+    <Button
+        android:layout_marginTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:textAllCaps="false"
+        android:text="Cancel"
+        />
+</LinearLayout>
+
+
+</LinearLayout>
