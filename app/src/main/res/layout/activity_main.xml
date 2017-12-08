@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.joe.smartstop.MainActivity">
-
-    <TextView
+    android:orientation="vertical"
+    android:background="@drawable/backgroup"
+ >
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@android:color/transparent"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/head_portrait" />
+    <Button
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <EditText
+        android:layout_width="250dip"
+        android:layout_height="40dip"
+        android:id="@+id/account"
+        android:hint="Username"
+        android:layout_gravity="center"
+        android:paddingLeft="40dip"
+        android:singleLine="true"
+        android:background="@drawable/shape_corner"
+        />
+    <ImageView
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/me"
+        android:id="@+id/account_image"
+        />
+</RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:background="@android:color/transparent"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:layout_width="250dip"
+            android:layout_height="40dip"
+            android:id="@+id/password"
+            android:hint="PassWord"
+            android:paddingLeft="40dip"
+            android:singleLine="true"
+            android:background="@drawable/shape_corner"
+            />
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:id="@+id/password_image"
+            android:src="@drawable/me"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:background="@android:color/transparent"
+        />
+<Button
+    android:layout_width="250dip"
+    android:layout_height="wrap_content"
+    android:id="@+id/Login"
+    android:background="@drawable/shape_carner_button"
+    android:layout_gravity="center"
+    android:textColor="#ffff"
+    android:text="Login"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:background="@android:color/transparent"
+        />
+    <Button
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:text="Register"
+        android:textColor="#ffff"
+        android:background="@drawable/shape_carner_button"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
